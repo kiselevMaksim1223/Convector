@@ -6,48 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="converterStyles.css">
-    <title>Document</title>
+    <title>Convector</title>
 </head>
 
 <body>
     <div class="container">
-        <h1 class="name"> Конвектор величин</h1>
+        <h1 class="name"> Time converter</h1>
         <form>
-            <div class="inputOutput">
+            <div class="input-output-select">
 
-                <input id="Input" type="number" placeholder="Enter Value"></input>
-                <span>=</span>
-                <input id="Output" type="number" placeholder="Result"></input>
+                <input id="input" class="input input-input" type="number" placeholder="Enter Value"></input>
+                <!-- <span>=</span> -->
+                <input id="result" class="input input-output" type="number" placeholder="Result"></input>
 
-            </div>
-
-            <div class="select">
-                <select name="" id="selectInput">
-                    <option value="">Miliseconds</option>
-                    <option value="">Seconds</option>
-                    <option value="">Minutes</option>
-                    <option value="">Hours</option>
-                    <option value="">Days</option>
-                    <option value="">Weeks</option>
-                    <option value="">Months</option>
-                    <option value="">Years</option>
-                </select>
-
-                <select name="" id="selectOutput">
-                    <option value="">Miliseconds</option>
-                    <option value="">Seconds</option>
-                    <option value="">Minutes</option>
-                    <option value="">Hours</option>
-                    <option value="">Days</option>
-                    <option value="">Weeks</option>
-                    <option value="">Months</option>
-                    <option value="">Years</option>
-                </select>
-            </div>
-
+                
+                <div class="select-container">
+                    <select id="inputType" class="select">
+                        <option value="Miliseconds">Miliseconds</option>
+                        <option value="Seconds">Seconds</option>
+                        <option value="Minutes">Minutes</option>
+                        <option value="Hours">Hours</option>
+                        <option value="Days">Days</option>
+                        <option value="Weeks">Weeks</option>
+                        <option value="Months">Months</option>
+                        <option value="Years">Years</option>
+                    </select>
+                    
+                    <select id="resultType" class="select select-output">
+                        <option value="Miliseconds">Miliseconds</option>
+                        <option value="Seconds">Seconds</option>
+                        <option value="Minutes">Minutes</option>
+                        <option value="Hours">Hours</option>
+                        <option value="Days">Days</option>
+                        <option value="Weeks">Weeks</option>
+                        <option value="Months">Months</option>
+                        <option value="Years">Years</option>
+                    </select>
+                </div>
+                </div>
+                
 
         </form>
     </div>
+
+    <script src="/Convector.js"></script>
 </body>
 
 </html>
